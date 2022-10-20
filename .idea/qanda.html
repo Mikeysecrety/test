@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>解答</title>
+    <style>
+        .he1
+        {
+            width: 100%;
+            background-color: #009999;
+            border-bottom: 5px #66cccc solid;
+            display: flex;
+            color:azure;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .div1{padding-left: 10px;}
+        .div2{font-family: 宋体;font-size: small;color: darkslategrey;padding-right: 20px;}
+        .div3{background-color: #ccffff;padding:5px;margin:3px;font-family: 楷体;}
+        input{
+            outline-style: none ;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 13px 14px;
+            width: 620px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: "Microsoft soft";
+        }
+        input:focus{
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+        }
+        ul
+        {  list-style-type:none;
+            text-align:center;
+            display: block;
+            margin:0;
+            padding: 0;
+            overflow:hidden;
+
+        }
+        li { padding: 10px; display:inline-block}
+        .a1:link,a:visited
+        {
+            display:block;
+            width:200px;
+            font-weight:bold;
+            color: #000000;
+            background-color: #66cccc;
+            padding: 15px;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+
+        }
+        .a1:hover,a:active { background-color:#e6e6e6;}
+    </style>
+</head>
+<script>
+    function show1(){
+        var two1=document.getElementById("t1")
+        if(two1.style.display=='block'){
+            two1.style.display='none';
+        }else{
+            two1.style.display='block';
+        }}
+function show2(){
+var two1=document.getElementById("t1")
+if(two1.style.display=='block'){
+two1.style.display='none';
+}else{
+two1.style.display='block';
+}}
+</script>
+<body>
+<header class="he1"><!--页眉-->
+    <div class="div1">
+        <a href="first.html" style="text-decoration: none;color: azure;"><h3>应急平台</h3></a>
+    </div>
+    <div class="div2">
+        <p><B>个人中心</B></p>
+    </div>
+</header>
+<div id="nav1">
+    <nav><!--导航-->
+        <ul>
+            <li onclick="show1()"><a href="#" title="捐款捐物" class="a1">常见问题</a></li>
+            <li id="two" onclick="show2()"><a href="#" title="物流动态" class="a1">在线客服</a></li>
+
+        </ul>
+    </nav>
+</div>
+<div id="t1" style="display: block">
+    <h2>常见问题</h2>
+    <div class="div3">
+        <h3>洪水来临时如何得到正确信息?</h3>
+        <p>汛期到来尤其是暴雨来临时，应及时收听、收看气象部门通过电视、广播、报刊等媒体发布的气象预报，并根据预报采取相应的防御措施。应及时掌握当地政府发布的相关信息，做好家庭和个人的防灾准备。应该利用通讯工具，拨打气象声讯服务电话，及时了解当地可能出现的各种天气变化。
+        </p>
+    </div>
+    <div class="div3">
+        <h3>洪水将要来临时，应做哪些物资准备?</h3>
+        <p>必要的物资准备，可以大大提高避险的成功率。应准备一台无线电收音机，随时收听、了解各种相关信息。准备大量饮用水，多备罐装果汁和保质期长的食品。准备保暖的衣物及治疗感冒、痢疾、皮肤感染的药品。准备可以用作通讯联络的物品，如手电筒、蜡烛、打火机等，准备颜色鲜艳的衣物及旗帜、哨子等，以防不测时当做信号。给汽车加满油，保证随时可以开动。</p>
+    </div>
+    <div class="div3">
+        <h3>洪水来临时，可供临时救生的物品有哪些?</h3>
+        <p>洪水来临时，要选择一切可以救生的物品逃生。首先挑选体积大的容器，如油桶、储水桶等，迅速倒出原有液体后，重新将盖子盖紧、密封。空的饮料瓶、木酒桶或塑料桶都具有一定浮力，可以捆扎在一起应急。足球、篮球、排球的浮力都很好，树木、桌椅板凳、箱柜等木质家具都有浮力。</p>
+    </div>
+    <div class="div3">
+        <h3>驾车时遭遇洪水怎么办?</h3>
+        <p>在水中要非常小心地驾驶，观察道路情况。如果在洪水中出现熄火现象，应立即弃车，在不断上涨的洪水中，试图驱动一辆抛锚的车是十分危险的。
+            如果车掉进水中，必须在水漫至车窗前逃离，这时车还浮在水面。当车沉没水中时，要摇起车窗，并打开所有车灯，作为求救信号。如果车门打不开，一定保证车内的人在水面以上。水漫到下巴位置时，车外面的水压能轻一些，这时打开车门，深吸一口气游到水面上。如果车门还是打不开，就设法砸开玻璃往外爬。逃生时，乘客可以互相牵扯，这样门既不会关上，又可以避免人被冲走。</p>
+    </div>
+</div>
+<div id="t2" style="display:block;background-color:azure">
+<h2>智能客服</h2>
+    <img src="../images/askicon.png" width="20px" style="float: left">
+    <p>&nbsp;我是机器人小Y，很高兴为您服务，请问有什么可以帮您？</p>
+    <div style="background-color:#CCFFFF;width: 500px;padding: 5px;margin: 10px;">
+        <b>猜你想问</b>
+        <p style="color: mediumturquoise">附近救援队信息</p>
+        <p style="color: mediumturquoise">附近临时庇护所</p>
+        <p style="color: mediumturquoise">捐款捐赠</p>
+        <p style="color: mediumturquoise">查询物流</p>
+    </div>
+    <div>
+        <input type="text" placeholder="我想说" >
+    </div>
+</div>
+</body>
+</html>

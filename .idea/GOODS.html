@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>物资</title>
+    <style>
+        .he1
+        {
+            width: 100%;
+            background-color: #009999;
+            border-bottom: 5px #66cccc solid;
+            display: flex;
+            color:azure;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .div1{padding-left: 10px;}
+        .div2{font-family: 宋体;font-size: small;color: darkslategrey;padding-right: 20px;}
+        ul
+        {  list-style-type:none;
+            text-align:center;
+            display: block;
+            margin:0;
+            padding: 0;
+            overflow:hidden;
+
+        }
+        li { padding: 10px; display:inline-block}
+        .a1:link,a:visited
+        {
+            display:block;
+            width:200px;
+            font-weight:bold;
+            color: #000000;
+            background-color: #66cccc;
+            padding: 15px;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+
+        }
+        .a1:hover,a:active { background-color:#e6e6e6;}
+        .basic-grey {
+
+            margin-left:auto;
+
+            margin-right:auto;
+
+            max-width: 500px;
+
+            background: #F7F7F7;
+
+            padding: 25px 15px 25px 10px;
+
+            font: 12px Georgia, "Times New Roman", Times, serif;
+
+            color: #888;
+
+            text-shadow: 1px 1px 1px #FFF;
+
+            border:1px solid #E4E4E4;
+
+        }
+
+        .basic-grey h1 {
+
+            font-size: 25px;
+
+            padding: 0px 0px 10px 40px;
+
+            display: block;
+
+            border-bottom:1px solid #E4E4E4;
+
+            margin: -10px -15px 30px -10px;;
+
+            color: #888;
+
+        }
+
+        .basic-grey h1>span {
+
+            display: block;
+
+            font-size: 11px;
+
+        }
+
+        .basic-grey label {
+
+            display: block;
+
+            margin: 0px;
+
+        }
+
+        .basic-grey label>span {
+
+            float: left;
+
+            width: 20%;
+
+            text-align: right;
+
+            padding-right: 10px;
+
+            margin-top: 10px;
+
+            color: #888;
+
+        }
+
+        .basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+
+            border: 1px solid #DADADA;
+
+            color: #888;
+
+            height: 30px;
+
+            margin-bottom: 16px;
+
+            margin-right: 6px;
+
+            margin-top: 2px;
+
+            outline: 0 none;
+
+            padding: 3px 3px 3px 5px;
+
+            width: 70%;
+
+            font-size: 12px;
+
+            line-height:15px;
+
+            box-shadow: inset 0px 1px 4px #ECECEC;
+
+            -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+
+            -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+
+        }
+
+        .basic-grey textarea{
+
+            padding: 5px 3px 3px 5px;
+
+        }
+
+        .basic-grey select {
+
+            background: #FFF url('down-arrow.png') no-repeat right;
+
+            background: #FFF url('down-arrow.png') no-repeat right);
+
+            appearance:none;
+
+            -webkit-appearance:none;
+
+            -moz-appearance: none;
+
+            text-indent: 0.01px;
+
+            text-overflow: '';
+
+            width: 70%;
+
+            height: 35px;
+
+            line-height: 25px;
+
+        }
+
+        .basic-grey textarea{
+
+            height:100px;
+
+        }
+
+        .basic-grey .button {
+
+            background: #E27575;
+
+            border: none;
+
+            padding: 10px 25px 10px 25px;
+
+            color: #FFF;
+
+            box-shadow: 1px 1px 5px #B6B6B6;
+
+            border-radius: 3px;
+
+            text-shadow: 1px 1px 1px #9E3F3F;
+
+            cursor: pointer;
+
+        }
+
+        .basic-grey .button:hover {
+
+            background: #CF7A7A
+
+        }
+    </style>
+</head>
+<script>
+    function show1(){
+        var two=document.getElementById("t1");
+        if(two.style.display=='block'){
+            two.style.display='none'
+        }else{
+            two.style.display='block'
+        }
+    }
+    function show2(){
+        var two2=document.getElementById("t2");
+        if(two2.style.display=='block'){
+            two2.style.display='none'
+        }else{
+            two2.style.display='block'
+        }
+    }
+    function show3(){
+        var two3=document.getElementById("t3");
+        if(two3.style.display=='block'){
+            two3.style.display='none'
+        }else{
+            two3.style.display='block'
+        }
+    }
+</script>
+<body>
+<header class="he1"><!--页眉-->
+    <div class="div1">
+        <a href="first.html" style="text-decoration: none;color: azure;"><h3>应急平台</h3></a>
+    </div>
+    <div class="div2">
+        <p><B>个人中心</B></p>
+    </div>
+</header>
+<div id="nav1">
+    <nav><!--导航-->
+        <ul>
+            <li id="one" onclick="show1()"><a href="#" title="捐款捐物" class="a1">捐款捐物</a></li>
+            <li id="two" onclick="show2()"><a href="#" title="物流动态" class="a1">物流动态</a></li>
+            <li><a href="#" title="物资领取" class="a1">物资领取</a></li>
+            <li id="three" onclick="show3()"><a href="#" title="特殊物资申请" class="a1">特殊物资申请</a></li>
+
+        </ul>
+    </nav>
+</div>
+
+<div id="t1" style="display: none">
+    <div style="width: 1000px">
+    <h3>河南省慈善总会</h3>
+    <p style="font-family: 楷体"><b>方式一</b><br>
+        户 名：河南省慈善总会<br>
+        账 号：2585 0087 5828<br>
+        开 户 行：中国银行郑州晨旭路支行<br>
+        <br>
+        <b>方式二</b><img src="../images/ten1.jpg" style="float: right" width="100px" >
+        捐赠二维码：（见图）
+        （捐赠留言请填写：抗洪救灾）<br>
+        联系电话：0371-65909051、65907950、65900002<br>
+        地 址：郑州市晨旭路8号福彩大厦502室。<br>
+        邮政编码：450011<br>
+        <br>
+        【重要说明】
+        1.为方便开具捐赠发票，捐赠时请务必注明捐款人（企业）准确名称及联系方式。<br>
+        2.为方便接收捐赠物资，请先行与河南省慈善总会沟通捐赠意向，得到确认后再捐赠。<br>
+        3.接收的所有捐赠款物，统一向社会公示，公开接受社会监督，除定向捐赠外所有捐赠款物由省防汛抗旱指挥部统一调配使用。<br>
+    </p>
+    </div>
+    <hr>
+    <div style="width: 1000px">
+        <h3>支付宝</h3>
+        <p style="font-family: 楷体"><b>支付宝—我的—我的公益</b></p>
+        <img src="../images/ten2.jpg" width="800px">
+    </div>
+    <hr>
+    <div style="width: 1000px">
+        <h3>腾讯公益</h3>
+        <p style="font-family: 楷体"><b>微信-我-支付-腾讯公益</b></p>
+        <img src="../images/ten3.jpg" width="200px">
+    </div>
+</div>
+
+<div id="t2" style="display: none">
+    <img src="../images/express.jpg" width="1000px">
+</div>
+
+<div id="t3" style="display:none">
+    <form action="" method="post" class="basic-grey">
+        <h1>特殊物质申请
+            <span>请填写您的需求！</span>
+        </h1>
+        <label>
+            <span>姓名：</span>
+            <input id="name" type="text" name="name"  />
+        </label>
+        <label>
+            <span>联系电话：</span>
+            <input id="name" type="text" name="name"  />
+        </label>
+        <label>
+            <span>所需物资</span>
+           <input id="name" type="text" >
+        </label>
+        <label>
+            <span>说明:</span>
+            <textarea id="message" name="message" placeholder="请简要说明您需要申请该特殊物资的理由"></textarea>
+        </label>
+        <label>
+            <span>地址</span>
+            <input id="name" type="text" name="name" placeholder="请输入您的地址"  />
+        </label>
+
+        <br/>
+        <label>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="发送" />
+            <span>&nbsp;</span>
+            <input type="reset" class="button" value="重置">
+        </label>
+    </form>
+</div>
+</body>
+</html>

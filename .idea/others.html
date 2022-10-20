@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>其他</title>
+    <style>
+        .he1
+        {
+            width: 100%;
+            background-color: #009999;
+            border-bottom: 5px #66cccc solid;
+            display: flex;
+            color:azure;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .div1{padding-left: 10px;}
+        .div2{font-family: 宋体;font-size: small;color: darkslategrey;padding-right: 20px;}
+        ul
+        {  list-style-type:none;
+            text-align:center;
+            display: block;
+            margin:0;
+            padding: 0;
+            overflow:hidden;
+
+        }
+        li { padding: 10px; display:inline-block}
+        .a1:link,a:visited
+        {
+            display:block;
+            width:200px;
+            font-weight:bold;
+            color: #000000;
+            background-color: #66cccc;
+            padding: 15px;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+
+        }
+        .a1:hover,a:active { background-color:#e6e6e6;}
+        .Content-Main{
+            max-width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px 30px 20px 30px;
+            font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-shadow: 1px 1px 1px #FFF;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            color: #888;
+            background: #FFF;
+        }
+        .Content-Main h1{
+            display: block;
+            padding: 0px 0px 10px 40px;
+            margin: -10px -30px 30px -30px;
+            font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            border-bottom: 1px solid #DADADA;
+            color: #888;
+        }
+        .Content-Main h1>span{
+            display: block;
+            font-size: 11px;
+        }
+        .Content-Main label{
+            display: block;
+            margin: 0px 0px 5px;
+        }
+        .Content-Main label>span{
+            float: left;
+            width: 20%;
+            padding-right: 10px;
+            margin-top: 10px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            text-align: right;
+            color: #333;
+        }
+        .Content-Main input[type="text"],.Content-Main textarea{
+            width: 70%;
+            height: 20px;
+            padding: 5px 0px 5px 5px;
+            margin-bottom: 16px;
+            margin-right: 6px;
+            margin-top: 2px;
+            line-height: 15px;
+            border-radius: 4px;
+            border: 1px solid #CCC;
+            color: #888;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+        .select1{
+            width: 71%;
+            height: 35px;
+            margin-bottom: 16px;
+            margin-right: 6px;
+            margin-top: 2px;
+            line-height: 15px;
+            padding: 5px 0px 5px 5px;
+            border-radius: 4px;
+            border: 1px solid #CCC;
+            color: #888;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+        .select2{
+            width: 25%;
+            height: auto;
+            padding-top: 1px;
+            padding-bottom: 3px;
+            padding-left: 1px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #CCC;
+            color: #888;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        }
+        .Content-Main textarea{
+            width: 70%;
+            height: 100px;
+            padding: 5px 0px 0px 5px;
+        }
+        #url{
+            width: 70%;
+            height: auto;
+            padding: 5px 0px 25px 5px;
+        }
+        #describe{
+            width: 70%;
+            height: auto;
+            padding: 5px 0px 80px 5px;
+        }
+        #email{
+            width: 70%;
+            height: auto;
+            padding: 5px 0px 5px 5px;
+        }
+        #verifiation code{
+            width: 20px;
+            height: auto;
+        }
+        .button{
+            padding: 10px 25px 10px 25px;
+            margin-left: 111px;
+            border-radius: 4px;
+            border:1px solid #CCC;
+            background: #FFF;
+            color: #333;
+        }
+        .button:hover{
+            color: #333;
+            background-color: #EBEBEB;
+            border-color: #ADADAD;
+        }
+
+    </style>
+</head>
+<script>
+    function show1(){
+        var two=document.getElementById("t1");
+        if(two.style.display=='block'){
+            two.style.display='none'
+        }else{
+            two.style.display='block'
+        }
+    }
+    function show2(){
+        var two2=document.getElementById("t2");
+        if(two2.style.display=='block'){
+            two2.style.display='none'
+        }else{
+            two2.style.display='block'
+        }
+    }
+    function show3(){
+        var two3=document.getElementById("t3");
+        if(two3.style.display=='block'){
+            two3.style.display='none'
+        }else{
+            two3.style.display='block'
+        }
+    }
+</script>
+<body>
+<header class="he1"><!--页眉-->
+    <div class="div1">
+        <a href="first.html" style="text-decoration: none;color: azure;"><h3>应急平台</h3></a>
+    </div>
+    <div class="div2">
+        <p><B>个人中心</B></p>
+    </div>
+</header>
+<div id="nav1">
+    <nav><!--导航-->
+        <ul>
+            <li id="one" onclick="show1()"><a href="#" title="使用指南" class="a1">使用指南</a></li>
+            <li id="two" onclick="show2()"><a href="#" title="投诉举报" class="a1">投诉举报</a></li>
+            <li id="three" onclick="show3()"><a href="#" title="优化建议" class="a1">优化建议</a></li>
+
+        </ul>
+    </nav>
+</div>
+<div id="t1" style="display: none">
+    <h3>使用指南</h3>
+    <a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/resource-sharing/guidance.html">阅读详情</a>
+</div>
+<div id="t2" style="display: none">
+    <div class="Content-Main">
+        <div class="Content-Main1">
+            <h1>投诉举报</h1>
+            <p>您的个人信息将严格保密</p>
+        </div>
+        <form action="" method="post" class="form-report">
+            <label>
+                <span>Type:</span>
+                <select name="select2" class="select2">
+                    <option value="">涉及诈骗</option>
+                    <option value="">涉及侵权</option>
+                    <option value="">虚假内容</option>
+                    <option value="">贪污腐败</option>
+                    <option value="">其他</option>
+                </select>
+            </label>
+            <label>
+                <span>问题描述:</span>
+                <textarea id="describe" name="describe" placeholder="详细填写投诉举报理由，有利于审核，不得少于8个字"></textarea>
+            </label>
+            <label>
+                <span>其他材料</span>
+                <input type="file" id="url" name="url" placeholder="若有，请在此补充视听材料"></input>
+            </label>
+
+            <label>
+                <span>Email:</span>
+                <textarea id="email" name="email" placeholder="请务必填写正确的邮箱地址"></textarea>
+            </label>
+            <label>
+                <span>联系电话</span>
+                <input type="text" id="verifiation code">
+            </label>
+            <label>
+                <input type="submit" class="button" value="发送">
+                <input type="reset" class="button" value="取消">
+            </label>
+        </form>
+    </div>
+
+</div>
+<div id="t3" style="display: none">
+    <div class="Content-Main">
+        <div class="Content-Main1">
+            <h1>优化建议</h1>
+            <p>感谢您的反馈！</p>
+        </div>
+        <form action="" method="post" class="form-report">
+            <label>
+                <span>Type:</span>
+                <select name="select2" class="select2">
+                    <option value="">设计排版</option>
+                    <option value="">隐私权利</option>
+                    <option value="">内容功能</option>
+                    <option value="">加载运行</option>
+                    <option value="">其他</option>
+                </select>
+            </label>
+            <label>
+                <span>问题描述:</span>
+                <textarea id="describe" name="describe" placeholder="请指出我们的不足之处"></textarea>
+            </label>
+            <label>
+                <span>其他材料</span>
+                <input type="file" id="url" name="url" placeholder="若有，请在此补充视频图片材料"></input>
+            </label>
+            <label>
+                <span>建议内容（理由）</span>
+                <input type="text" id="verifiation code">
+            </label>
+            <label>
+                <span>可行性措施或改进方案：</span>
+                <input type="text" id="verifiation code">
+            </label>
+            <label>
+                <input type="submit" class="button" value="发送">
+                <input type="reset" class="button" value="取消">
+            </label>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

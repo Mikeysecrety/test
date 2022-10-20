@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <meta name="author" content="CYT">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>首页</title>
+    <style type="text/css">
+        .he1
+        {
+            width: 100%;
+            background-color: #009999;
+            border-bottom: 5px #66cccc solid;
+            display: flex;
+            color:azure;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .div1{padding-left: 10px;}
+        .div2{font-family: 宋体;font-size: small;color: darkslategrey;padding-right: 20px;}
+        .div3{width: 100%;display: flex;
+            align-items: center;
+            justify-content: space-between;}
+        .div4{margin: 20px;}
+        .div5{background-color: #CCFFFF;
+            width: 100%;height: 100px;text-align: center;
+            border-bottom:1px solid;border-bottom-color: #66CCCC;
+        }
+        #os1{font-family: 黑体;font-size: larger;line-height: 100px;}
+        .modal{
+            width: 300px;
+            margin: 0 auto;
+            position: relative;
+            top: 50%; /*偏移*/
+            background: #ffffff;
+            border-radius: 5px;
+        }
+        .confirm{
+            height: 50px;
+            border-top: 1px solid #eee;
+            display: flex;
+        }
+        .confirm>span{
+            flex: 1;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .confirm>span:nth-child(1){
+            color: red;
+        }
+        .confirm>span:nth-child(2){
+            border-left: 1px solid #eee;
+        }
+        .title{
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+        .title>p{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        .important{
+            color: red;
+        }
+        .close-but:hover{
+            opacity: 0.5;
+        }
+        .content{
+            max-height: 500px;
+            overflow-y:auto;
+        }
+        .content>span{
+            padding: 0 10px 10px 10px;
+        }
+        .hidden{
+            display: none
+        }
+    </style>
+</head>
+<script type="text/javascript">
+    let modalHeight = document.getElementById('modal').offsetHeight;
+    document.getElementById('modal').style.marginTop=-(modalHeight/2)+"px";
+
+    function fnClose(){
+        document.getElementById('modal').setAttribute("class","hidden");
+        document.getElementById('body').setAttribute("class","body-class");
+    };
+</script>
+<body>
+<header class="he1"><!--页眉-->
+    <div class="div1">
+        <a href="first.html" style="text-decoration: none;color: azure;"><h3>应急平台</h3></a>
+    </div>
+    <div class="div2">
+        <p><B>个人中心</B></p>
+    </div>
+</header>
+<div class="modal" id="modal">
+    <div class="title">
+        <p class="important">提示</p>
+    </div>
+    <div class="content">
+        <span id="msg">请先进行
+            <b style="color: darkblue;">身份认证</b><br/>
+            &nbsp;&nbsp;请选择使用模式：<br/>
+            &nbsp;&nbsp;<b style="color: darkblue;font-size: small;">正常模式&nbsp;老人模式&nbsp;
+            听障模式&nbsp;视障模式</b>
+        </span>
+    </div>
+    <div class="confirm" onclick="fnClose()">
+        <span class="close-but">确认登录</span>
+    </div>
+
+</div>
+<div class="div3">
+    <div class="div4">
+        <img src="../images/first4.jpg" width="500px" height="800px">
+    </div>
+    <div class="div4">
+        <img src="../images/first3.jpg" width="500px" height="800px">
+    </div>
+</div>
+<div class="div3">
+    <div class="div4">
+        <a href="main.html"><img src="../images/first1.jfif" width="500px" height="800px"></a>
+    </div>
+    <div class="div4">
+        <img src="../images/first2.jfif" width="500px" height="800px">
+    </div>
+</div>
+<div class="div5"><span id="os1">其他灾情</span></div>
+<div class="div5"><span id="os1">灾情申报</span></div>
+</body>
+</html>

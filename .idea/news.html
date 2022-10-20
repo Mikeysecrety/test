@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>资讯</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(at center,
+            #3498db, #66cccc);
+            justify-content: center;
+            align-items: center;
+        }
+        #img{display: flex;
+            align-items: center;
+            justify-content:space-between;}
+
+        div.search{
+            height: 40px;
+            width: 500px;
+            position:absolute;
+            left:40%;
+            top:50%;
+            margin:-100px 0 0 -150px;
+            display: flex;
+        }
+
+        div.search form{
+            width: 100%;
+            height: 100%;
+        }
+
+        div.search form input:nth-child(2){
+            width: 400px;
+            height: 100%;
+            font-size: 16px;
+            text-indent: 40px;
+            border: none;
+            float: left;
+        }
+
+        div.search form input:nth-child(3){
+            width: 100px;
+            height: 100%;
+            font-size: 16px;
+            letter-spacing: 5px;
+            border: none;
+        }
+
+        div.search form img{
+            position: absolute;
+            left: 50vw;
+            transform: translateX(-250px);
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 20px;
+        }
+        ul
+        {  list-style-type:none;
+            text-align:center;
+            display: block;
+            margin:0;
+            padding: 0;
+            width:400px;
+            overflow:hidden;
+            position:absolute;
+            left:30%;
+            top:50%;
+
+        }
+        li {width:100px;padding: 10px; display:inline-block;background-color: #ccffff;margin: 5px;}
+    </style>
+</head>
+</head>
+<body>
+<div id="img">
+    <img src="../images/rain.jpeg" style="height: 200px;">
+    <img src="../images/rain2.gif" style="height: 200px;">
+    <img src="../images/rain3.jpg" style="height: 200px;">
+    <img src="../images/rain4.gif" style="height: 200px;">
+</div>
+<div class="search">
+    <form action="#" method="post">
+        <img src="../images/search.png" alt="">
+        <input type="text" name="condition" placeholder="请输入搜索关键词">
+        <input type="submit" value="搜索">
+    </form>
+</div>
+<span>
+    <ul>
+        <li>救援信息</li>
+        <li>灾情预警</li>
+        <li>气象地理</li>
+        <li>政府文件</li>
+        <li>政务动态</li>
+        <li>好人好事</li>
+        <li>社会热点</li>
+    </ul>
+</span>
+</body>
+</html>

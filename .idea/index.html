@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <meta name="author" content="CYT">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style type="text/css">
+        /*
+            设置div固定显示在屏幕位置时，定位计算公式：
+            left:50% + margin-left:±（页面内容部分宽度+div宽度+间隔像素）
+        */
+        #divMain{background-color: #ffffcc;width:100px;height:25px;margin:0px auto;position:fixed;top:90%;left:45%;text-align:center;}
+        .he0{width: 100%;
+            background-color: #ccffff;
+            border-bottom: 5px #93d99a solid;
+            padding: 20px;
+        }
+        .fo1{width: 100%;
+            background-color: #d8fbc5;
+            padding: 1px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+        }
+       .he1
+        {
+            width: 100%;
+            background-color: #009999;
+            border-bottom: 5px #66cccc solid;
+            display: flex;
+            color:azure;
+            align-items: center;
+           justify-content: space-between;
+        }
+       .he2 {width: 100%;
+           background-color: #ffffcc;
+           display: flex;
+           align-items: center;
+           justify-content:space-between;
+       }
+       ul
+       {  list-style-type:none;
+           text-align:center;
+           display: block;
+           margin:0;
+           padding: 0;
+           overflow:hidden;
+
+       }
+       li { padding: 10px; display:inline-block}
+       .div1{padding-left: 10px;}
+       .div2{font-family: 宋体;font-size: small;color: darkslategrey;padding-right: 20px;}
+       .div3{padding-left: 10px;}
+       .div4{font-family:隶书;font-size: small;color: darkslategrey;padding-right: 20px;}
+       .sp1{font-family:隶书;font-size: small;color: darkslategrey;padding-right: 20px;display: flex;}
+       .a1:link,a:visited
+       {
+           display:block;
+           width:200px;
+           font-weight:bold;
+           color: #000000;
+           background-color: #66cccc;
+           padding: 15px;
+           text-decoration:none;
+           text-align: center;
+           vertical-align: middle;
+
+       }
+       .a1:hover,a:active { background-color:#e6e6e6;}
+       #BJ{            /*图片居中 */
+           text-align:center;
+       }
+       #img{           /*图片宽度，高度 */
+           width: 1000px;
+           height: 600px;
+       }
+       #ol{
+           position: absolute;    /* 绝对定位 */
+           bottom: 10px;       /* 高度 */
+           width: 100%;        /* 宽度 */
+           text-align: center;  /* 居中*/
+           right: 15px;
+       }
+    </style>
+</head>
+<script type="text/javascript">
+    //图片自动切换部分：
+    var index=0;
+    var imgs=["../images/p1.jpg","../images/p2.png","../images/p3.gif","../images/p4.png"]; /*图片的地址 */
+    function qiehuan(){
+        document.getElementById("img").src=imgs[index];
+        index++;
+        if(index > 3){
+            index=0;    //只有四张图片，当为3的时候重置为0
+        }
+    }
+    setInterval("qiehuan()",1000);  //每3秒重新运行函数qiehuan()
+
+
+    //图片点击切换部分：
+    window.onload = function () {
+        //获取四张图片id
+        var c1 = document.getElementById("clk1");
+        var c2 = document.getElementById("clk2");
+        var c3 = document.getElementById("clk3");
+        var c4 = document.getElementById("clk4");
+
+        //点击相应按钮，则显示相应图片
+        c1.onclick=function() {
+            document.getElementById("img").src=imgs[0];
+        }
+        c2.onclick=function() {
+            document.getElementById("img").src=imgs[1];
+        }
+        c3.onclick=function() {
+            document.getElementById("img").src=imgs[2];
+        }
+        c4.onclick=function() {
+            document.getElementById("img").src=imgs[3];
+        }
+    }
+</script>
+<body>
+<header class="he1"><!--页眉-->
+    <div class="div1">
+        <a href="first.html" style="text-decoration: none;color: azure;"><h3>应急平台</h3></a>
+    </div>
+    <div class="div2">
+        <p><B>个人中心</B></p>
+    </div>
+</header>
+<div>
+    <div id="BJ">
+        <img src="../images/p1.jpg" id="img" />
+    </div>
+    <ul id="ol">
+        <!--设置图片为一行 ；设置图片间隔 -->
+        <li style="display: inline-block;margin: 0 5px;"><img id="clk1"></li>
+        <li style="display: inline-block;margin: 0 5px;"><img id="clk2"></li>
+        <li style="display: inline-block;margin: 0 5px;"><img id="clk3"></li>
+        <li style="display: inline-block;margin: 0 5px;"><img id="clk4"></li>
+    </ul>
+</div>
+<div id="nav1">
+    <nav><!--导航-->
+        <ul>
+            <li><a href="askforhelp.html" title="求助" class="a1">求助</a></li>
+            <li><a href="news.html" title="资讯" class="a1">资讯</a></li>
+            <li><a href="GOODS.html" title="物资" class="a1">物资</a></li>
+            <li><a href="qanda.html" title="解答" class="a1">解答</a></li>
+            <li><a href="hlep.html" title="施救" class="a1">施救</a></li>
+            <li><a href="../images/Inkedlocation0.jpg" title="互助地图" class="a1">互助地图</a></li>
+            <li><a href="volunteer.html" title="志愿者报名" class="a1">志愿者报名</a></li>
+            <li><a href="others.html" title="其他" class="a1">其他</a></li>
+        </ul>
+    </nav>
+</div>
+<main>
+    <div class="he0">
+        <header>
+         <div class="he2">
+          <div class="div3"><h3>张三</h3></div><div class="div4"><p>未完成</p></div>
+         </div>
+            <time datetime="2022-7-28">2022年7月28日</time>
+        </header>
+        <p><b>电话：</b>150****6678</p>
+        <p><b>求助类别：</b>灾害被困</p>
+        <p><b>困境描述：</b>被困在xx区xx街道xx小区xx栋二楼，请求救援！</p>
+        <footer>
+           <div class="fo1"><span class="sp1">阅读(99+)</span><span class="sp1"><u>参与施救</u>&nbsp;&nbsp;<input type="checkbox">完成施救</span></div>
+        </footer>
+    </div>
+    <div class="he0">
+        <header>
+            <div class="he2">
+                <div class="div3"><h3>李四</h3></div><div class="div4"><p>未完成</p></div>
+            </div>
+            <time datetime="2022-7-28">2022年8月6日</time>
+        </header>
+        <p><b>电话：</b>124****6655</p>
+        <p><b>求助类别：</b>看病就医</p>
+        <p><b>困境描述：</b>感冒发热，附近找不到医生和药店，请求帮助！</p>
+        <footer>
+            <div class="fo1"><span class="sp1">阅读(99+)</span><span class="sp1"><u>参与施救</u>&nbsp;&nbsp;<input type="checkbox">完成施救</span></div>
+        </footer>
+    </div>
+    <div class="he0">
+        <header>
+            <div class="he2">
+                <div class="div3"><h3>王五</h3></div><div class="div4"><p>已完成</p></div>
+            </div>
+            <time datetime="2022-7-28">2022年7月28日</time>
+        </header>
+        <p><b>电话：</b>170****6656</p>
+        <p><b>求助类别：</b>寻人求助</p>
+        <p><b>困境描述：</b>请好心人帮忙寻找住在XX区XX镇XX村的王XX老人，老人一人独居在家，目前联系不上，我们很着急，希望附近好心人帮我们看看老人是否安康！</p>
+        <footer>
+            <div class="fo1"><span class="sp1">阅读(99+)</span><span class="sp1"><u>参与施救</u>&nbsp;&nbsp;<input type="checkbox" checked="checked">完成施救</span></div>
+        </footer>
+    </div>
+    <div id="divContainer">
+        <div id="divMain">
+            <a href="askforhelp.html" style="text-decoration:none;"><span style="font-family: 黑体;text-align: center;font-size: medium;color:orangered;">我要求助</span></a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
